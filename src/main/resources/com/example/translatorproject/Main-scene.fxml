@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #999999;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.translatorproject.MainSceneController">
+   <children>
+      <TextField fx:id="translateTextField" layoutX="36.0" layoutY="2.0" onAction="#handleTranslateAction" prefHeight="59.0" prefWidth="270.0" promptText="Search...">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </TextField>
+      <Button id="button-1" layoutX="304.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleTranslateAction" prefHeight="38.0" prefWidth="43.0">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <Button id="button-back" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHelloScene" prefHeight="38.0" prefWidth="43.0" />
+      <VBox layoutY="85.0" prefHeight="417.0" prefWidth="350.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <TextArea fx:id="resultTextArea" editable="false" onDragDetected="#handleTranslateAction" prefHeight="423.0" prefWidth="350.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

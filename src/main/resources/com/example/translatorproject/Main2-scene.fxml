@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.translatorproject.Main2SceneController">
+   <children>
+      <Button layoutX="90.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleTranslateAction" prefHeight="25.0" prefWidth="90.0" text="Translate" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHelloScene" text="Back to Menu" />
+      <Button layoutX="219.0" layoutY="123.0" mnemonicParsing="false" text="TextToSpeech" />
+      <TextField fx:id="translateTextField" layoutX="59.0" layoutY="68.0" onAction="#handleTranslateAction" prefHeight="33.0" prefWidth="499.0" />
+      <Label layoutX="212.0" layoutY="30.0" text="Dịch từ tiếng Việt sang tiếng Anh" />
+      <TextField fx:id="resultTextArea" layoutX="59.0" layoutY="169.0" onAction="#handleTranslateAction" prefHeight="209.0" prefWidth="499.0" />
+   </children>
+</AnchorPane>
